@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
-        wLog("onWindowFocusChanged");
     }
 
     protected void wLog(String msg) {
