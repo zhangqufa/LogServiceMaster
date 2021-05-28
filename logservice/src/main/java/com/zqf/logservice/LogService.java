@@ -101,6 +101,7 @@ public class LogService extends Service {
         builder.setTicker("log_service");
         builder.setContentTitle("log_Service");
         builder.setContentText("Make this log_service run in the foreground.");
+        builder.setSound(null);
         startForeground(NOTIFICATION_ID, builder.build());
     }
 
