@@ -81,6 +81,7 @@ public class LogService extends Service {
         register();
         deploySwitchLogFileTask();
         logCollector();
+        startForeNotice();
     }
 
     private void startForeNotice() {
@@ -109,7 +110,6 @@ public class LogService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        startForeNotice();
         return Service.START_STICKY;
     }
 
