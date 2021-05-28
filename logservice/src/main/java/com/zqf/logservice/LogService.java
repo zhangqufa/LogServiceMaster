@@ -92,6 +92,8 @@ public class LogService extends Service {
                     CHANNEL_ONE_NAME, IMPORTANCE_HIGH);
             notificationChannel.enableLights(true);
             notificationChannel.setLightColor(Color.RED);
+            notificationChannel.setSound(null, null);
+            notificationChannel.enableVibration(false);
             notificationChannel.setShowBadge(true);
             notificationChannel.setLockscreenVisibility(Notification.VISIBILITY_PUBLIC);
             NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
